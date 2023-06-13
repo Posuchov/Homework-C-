@@ -5,9 +5,9 @@
 
 Console.Clear();
 Console.Write("Input a = ");
-int a = int.Parse(Console.ReadLine());
+int a = Convert.ToInt32(Console.ReadLine());
 Console.Write("Input b = ");
-int b = int.Parse(Console.ReadLine());
+int b = Convert.ToInt32(Console.ReadLine());
   if (a>b)
  {Console.WriteLine($"MAX is a = {a}");}
   else
