@@ -4,15 +4,17 @@
 // 7 -> нет
 
 Console.Clear();
-Console.Write("Input a = ");
-int a = int.Parse(Console.ReadLine());
-Console.Write("Input b = ");
-int b = int.Parse(Console.ReadLine());
-Console.Write("Input c = ");
-int c = int.Parse(Console.ReadLine());
-  if (a%2==0)
-{Console.WriteLine($"even number а = {a}");}
-  if (b%2==0)
-{Console.WriteLine($"even number b = {b}");}
-  if (c%2==0)
-{Console.WriteLine($"even number c = {c}");}
+Console.Write("Input number: ");
+int number = Convert.ToInt32(Console.ReadLine());
+if (number %2 == 0)
+{ 
+    Console.WriteLine($"{number} event number");
+//Если условие (%2==0 - означает "остаток от деления на 2" равен нулю) истина то вывести это число в консоль как чётное.
+//Числа 2,4,6 и т.д. делятся на 2 без остатка.
+}
+else
+{ 
+    Console.WriteLine($"{number} odd number");
+//Если условие ложь то вывести это число в консоль как нечётное.
+//Числа 3,5,7 и т.д. делятся на 2 с остатоком 1, следует числа нечётные.   
+}
