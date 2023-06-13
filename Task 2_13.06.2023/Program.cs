@@ -9,6 +9,6 @@ int a = int.Parse(Console.ReadLine());
 Console.Write("Input b = ");
 int b = int.Parse(Console.ReadLine());
   if (a>b)
- {Console.WriteLine("MAX is a");}
+ {Console.WriteLine($"MAX is a = {a}");}
   else
- {Console.WriteLine("MAX is b");}
+ {Console.WriteLine($"MAX is b = {b}");}
