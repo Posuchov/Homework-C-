@@ -5,14 +5,12 @@
 
 Console.Clear();
 Console.Write("Input a = ");
-int a = int.Parse (Console.ReadLine());
+int a = Convert.ToInt32 (Console.ReadLine());
 Console.Write("Input b = ");
-int b = int.Parse (Console.ReadLine());
+int b = Convert.ToInt32 (Console.ReadLine());
 Console.Write("Input c = ");
-int c = int.Parse (Console.ReadLine());
-
-  int max = a;
+int c = Convert.ToInt32 (Console.ReadLine());
+int max = a;
     if (b > max) max=b;
     if (c > max) max=c;
-
 Console.Write ($"MAX = {max}");
